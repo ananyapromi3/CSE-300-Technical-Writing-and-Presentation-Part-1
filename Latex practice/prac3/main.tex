@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{multirow}
+\title{CSE 300 Online 1}
+\author{2005079}
+\date{July 6, 2019}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+This is the first online practice on \LaTeX.\\ 
+We will do some styling in section 2.
+\section{Styling}
+This is \textbf{\textcolor{red}{bold}}. This is \textit{\textcolor{blue}{italic}} \& so on.
+\section*{Use of special characters}
+You can use special characters by preceding with \\. Another package can be used named as verbatim. Example: \textasciitilde !\textdollar \#\textbackslash@* $\hat{}$
+\section{List}
+There are 3 kinds of list.
+\begin{enumerate}
+    \item[i] Un-ordered
+    \item[ii] Ordered
+    \item[iii] Description 
+\end{enumerate}
+\newpage
+Let's see an example of lists:
+\begin{description}
+    \item[CSE 311] Data Communication I
+    \begin{itemize}
+        \item Fourier 
+        \item[] ADC 
+    \end{itemize}
+    \item[CSE 305] Computer Architecture 
+    \begin{enumerate}
+        \item MIPS 
+        \begin{itemize}
+            \item[(a)] \textit{commands}
+            \item[(b)] \textit{pipeline}
+        \end{itemize}
+        \item Shared memory
+    \end{enumerate}
+    \item[CSE 309] Compiler 
+\end{description}
+
+\section{Table}
+For understanding the use of multi-row and multi-column command see the table 1
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|r|}
+        \hline
+        \multirow{2}{*}{Dollar} & Rupee & taka & Euro \\
+        \cline{2-4}
+        & \multicolumn{2}{c|}{\multirow{3}{*}{Dhaka}} & DU \\
+        \cline{4-4}
+        City & \multicolumn{2}{c}{} & \multicolumn{1}{r|}{BUET} \\
+        \cline{1-1}
+        \cline{4-4}
+        Food & \multicolumn{2}{c|}{} & Mosque \\
+        \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+\end{document}
